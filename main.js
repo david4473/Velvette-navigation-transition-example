@@ -52,10 +52,11 @@ async function init() {
         });
       },
     });
+  });
 
-    //Uncomment to enable Velvette
+  //Uncomment to enable Velvette
 
-    /* const velvette = new Velvette({
+  /* const velvette = new Velvette({
     routes: {
       details: "?product=:product_id",
       list: "?products",
@@ -71,18 +72,17 @@ async function init() {
       ":root.vt-morph.vt-route-list #product-$(product_id) img": "morph-img",
     },
   });
-  
+
   navigation.addEventListener("navigate", (e) => {
     const url = new URL(e.destination.url);
     if (location.pathname !== url.pathname) return;
-    
+
     velvette.intercept(e, {
       handler() {
         render();
       },
     });
   }); */
-  });
 }
 
 init();
